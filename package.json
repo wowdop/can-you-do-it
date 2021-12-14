@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node start-local-server-for-your-browser.js"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
