@@ -1,0 +1,32 @@
+html,
+body {
+  /* set the document height to be the same as the view in the browser */
+  height: 100%;
+
+  /* reset margin value to 0 for body and html tags */
+  margin: 0;
+}
+
+body {
+  /* create spacing beteen the edges and our content */
+  padding: 1rem;
+
+  /* set a dark color as background to emphasise our content */
+  background-color: #475f7b;
+
+  /* Position our content in a linear layout */
+  display: flex;
+
+  /* Set the content to flow vertically */
+  flex-direction: column;
+
+  /* Set the content to be aligned in the center of the current element */
+  justify-content: center;
+  align-items: center;
+
+  /* Space out elements among each outer by 16px (1rem) */
+  gap: 1rem;
+
+  /* Change the default text color to white */
+  color: white;
+}
