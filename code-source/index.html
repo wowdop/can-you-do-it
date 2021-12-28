@@ -9,7 +9,48 @@
     <title>Find out if you can earn £50,000 to £100,000 per year</title>
     <!-- create custom style -->
     <style>
-      
+      /* resetam valorile implicite in browser */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      body {
+        background-color: #475F7B;
+        padding: 32px;
+      }
+
+      .steagul-romaniei {
+        display: flex;
+      }
+
+      .parte-a-steagului {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 160px 0;
+      }
+
+      .parte-a-steagului:nth-child(1) {
+        background-color: #CC2424;
+        color: white;
+      }
+
+      .parte-a-steagului:nth-child(2) {
+        background-color: #E6D722;
+      }
+
+      .parte-a-steagului:nth-child(3) {
+        background-color: #3D7EE8;
+        color: white;
+      }
     </style>
   </head>
 
@@ -17,6 +58,11 @@
     <h1>Find out if you can earn £50,000 to £100,000 per year</h1>
 
     <!-- Your solution starts here! -->
+    <div class="steagul-romaniei">
+      <div class="parte-a-steagului">Highly Paid Career</div>
+      <div class="parte-a-steagului">Company Experince</div>
+      <div class="parte-a-steagului">Highly Paid Jobs</div>
+    </div>
     <!-- Your solution ends here! -->
   </body>
 </html>
