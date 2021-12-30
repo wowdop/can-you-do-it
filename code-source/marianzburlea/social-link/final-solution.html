@@ -42,7 +42,7 @@
         text-align: center;
         transition: 250ms;
         transition-delay: 200ms;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color:hsl(220, 86%, 28%)
       }
@@ -138,11 +138,38 @@
       @media screen and (min-width: 768px) {
         nav {
           display: grid;
-          grid-auto-flow: column;
+          grid-template-columns: repeat(4, 1fr);
+          position: relative;
         }
 
         a {
           padding: 1.5rem;
+        }
+
+        .active-indicator {
+          height: 12px;
+          background-color: pink;
+          width: calc(100% / 4);
+          position: absolute;
+          bottom: -12px;
+          left: 0;
+          transition: 250ms;
+        }
+
+        a:nth-child(1):hover ~ .active-indicator{
+          left: calc(100% / 4 * 0)
+        }
+
+        a:nth-child(2):hover ~ .active-indicator{
+          left: calc(100% / 4 * 1)
+        }
+
+        a:nth-child(3):hover ~ .active-indicator{
+          left: calc(100% / 4 * 2)
+        }
+
+        a:nth-child(4):hover ~ .active-indicator{
+          left: calc(100% / 4 * 3)
         }
       }
     </style>
@@ -169,6 +196,7 @@
       <a data-social="facebook" href="https://facebook.com/joinwowdop">
         <span>facebook</span>
       </a>
+      <div class="active-indicator"></div>
     </nav>
   </body>
 </html>
